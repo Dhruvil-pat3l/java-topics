@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="form">
+	
+<form action="SortServlet" method="post" style="text-align: center; " >
+	<div>
+    <label> Find Published year of specific book.<br/> <b>Enter name of book</b> </label><br/>
+	<input type="text" name="book" placeholder="book" required />
+	<input type="submit" value="Find" id="fnd"> 
+	</div>
+</form>
+	<br/><br/>
+	
+<form action="SortServlet" method="post" style="text-align: center; " >
+	<div>
+    <label> Find list of books of specific year. <br/><b>Enter published year </b> </label><br/>
+	<input type="number" name="year" placeholder="year" required />
+	<input type="submit" value="Find" id="fnd"> 
+	</div>
+</form>
+
+<form action="SortServlet"  method="post" style="text-align: center;" >
+      <br/><label><b>Category</b></label><br/>
+      <select name="category" id="lang">
+        <option value="History">History</option>
+        <option value="Maths">Maths</option>
+        <option value="Physics">Physics</option>
+      </select>
+      <input type="submit" id="fnd" value="Submit" />
+</form>
+
+</div>
+</body>
+</html>

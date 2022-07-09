@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MethodsExamples</display-name>
+  <welcome-file-list>
+  <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+ 
+<servlet>
+<servlet-name>PracticeMethod</servlet-name>
+<servlet-class>methodPractice.PracticeMethod</servlet-class>
+<!--  <load-on-startup>0</load-on-startup>  --> 
+</servlet>
+ 
+  
+<context-param>  
+<param-name>First</param-name>  
+<param-value>One</param-value>  
+</context-param> 
+
+<context-param>  
+<param-name>Second</param-name>  
+<param-value>Two</param-value>  
+</context-param> 
+
+<context-param>  
+<param-name>Third</param-name>  
+<param-value>Three</param-value>  
+</context-param>  
+
+<servlet-mapping>
+<servlet-name>PracticeMethod</servlet-name>
+<url-pattern>/MethodURL</url-pattern>
+</servlet-mapping>
+
+</web-app>
